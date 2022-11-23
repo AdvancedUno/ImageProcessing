@@ -1,0 +1,199 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\MacaronCvDLL.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.KOR\\afxres.rc""      // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,2
+ PRODUCTVERSION 1,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1, 0, 0, 2"
+            VALUE "InternalName", "MacaronCvDLL.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "MacaronCvDLL.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1, 0, 0, 2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_OPTIONS DIALOGEX 0, 0, 218, 222
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 9, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "Use GPU",IDC_CHECK_SHOW_USE_GPU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,116,136,60,10
+    PUSHBUTTON      "Apply",IDC_BT_APPLY,67,185,81,28
+    CONTROL         "CLAHEGAMMA",IDC_CHECK_SHOW_USE_CLAHEGAMMA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,35,61,10
+    CONTROL         "CLAHE",IDC_CHECK_SHOW_USE_CLAHE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,12,37,10
+    CONTROL         "CLAHEHISEQ",IDC_CHECK_SHOW_USE_CLAHEHISEQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,93,57,10
+    CONTROL         "Gamma",IDC_CHECK_SHOW_USE_GAMMA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,47,39,10
+    CONTROL         "HisEQ",IDC_CHECK_SHOW_USE_HISEQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,106,34,10
+    EDITTEXT        IDC_EDIT_GAMMA_VALUE,64,55,18,14,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    LTEXT           "GAMMA Factor",IDC_STATIC,13,59,47,8
+    LTEXT           "Sharpening Factor",IDC_STATIC,116,90,58,8
+    EDITTEXT        IDC_EDIT_SHARPENING_FACTOR,180,85,18,14,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    CONTROL         "SHARPENING",IDC_CHECK_SHOW_USE_SHARPENING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,116,78,57,10
+    CONTROL         "ConvertColor",IDC_CHECK_SHOW_USE_CONVERTCOLOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,116,12,56,10
+    CONTROL         "Show Graph",IDC_CHECK_SHOW_USE_SHOW_GRAPH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,116,33,54,10
+    LTEXT           "Graph Size Factor",IDC_STATIC,116,44,55,8
+    EDITTEXT        IDC_EDIT_GRAPH_SIZE_FACTOR,179,39,18,14,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    GROUPBOX        "이미지 향상 옵션",IDC_STATIC_GROUPBOX1,3,4,98,177
+    GROUPBOX        "GAMMA",IDC_STATIC_GROUPBOX5,6,22,92,61
+    GROUPBOX        "HisEQ",IDC_STATIC_GROUPBOX3,6,84,92,35
+    GROUPBOX        "GPU 사용",IDC_STATIC_GROUPBOX4,109,121,99,38
+    GROUPBOX        "추가 옵션",IDC_STATIC_GROUPBOX2,105,4,107,177
+    CONTROL         "",IDC_SLIDER_GAMMA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,9,71,74,10
+    CONTROL         "",IDC_SLIDER_GRAPH,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,114,57,68,10
+    CONTROL         "",IDC_SLIDER_SHARP,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,114,102,68,10
+    GROUPBOX        "Graph",IDC_STATIC_GROUPBOX6,108,23,100,46
+    GROUPBOX        "Sharpening",IDC_STATIC_GROUPBOX7,109,68,98,46
+    GROUPBOX        "CLAHE Factors",IDC_STATIC_GROUPBOX8,6,120,92,58
+    LTEXT           "Limit Factor",IDC_STATIC,13,132,37,8
+    LTEXT           "Grid Size",IDC_STATIC,14,156,27,8
+    EDITTEXT        IDC_EDIT_LIMIT_FACTOR,64,129,17,14,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    EDITTEXT        IDC_EDIT_GRID_SIZE,64,153,17,14,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    CONTROL         "",IDC_SLIDER_LIMIT_FACTOR,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,10,143,87,10
+    CONTROL         "",IDC_SLIDER_GRID_SIZE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,10,167,86,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_OPTIONS, DIALOG
+    BEGIN
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 215
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_OPTIONS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\MacaronCvDLL.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.KOR\afxres.rc"      // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

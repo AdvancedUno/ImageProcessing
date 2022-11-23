@@ -1,0 +1,7 @@
+; MacaronDLLd.def : Declares the module parameters for the DLL.
+
+LIBRARY      "MacaronDLLd"
+
+EXPORTS
+    ; Explicit exports can go here
+  
